@@ -13,7 +13,7 @@ public class Test{
 
 
 
-        string path = string.Format(Application.dataPath + "../wsds.apk");
+        string path = Application.dataPath +"/aaaa.apk";
         Debug.LogError("========================================================");
         Debug.LogError(path);
         Debug.LogError("========================================================");
