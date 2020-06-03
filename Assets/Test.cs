@@ -12,7 +12,7 @@ public class Test{
 
 
 
-        string path = string.Format(Application.dataPath + "/../../packageAPK/Channel/null/wsds.apk");
+        string path = string.Format(Application.dataPath + "/wsds.apk");
         BuildPipeline.BuildPlayer(GetBuildScenes(), path, BuildTarget.Android, BuildOptions.None);
     }
 
