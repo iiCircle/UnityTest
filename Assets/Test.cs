@@ -6,6 +6,8 @@ public class Test{
 
     public static void BuildTest()
     {
+        Debug.LogError("========================================================");
         Debug.LogError("BuildTest");
+        Debug.LogError("========================================================");
     }
 }
