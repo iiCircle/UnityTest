@@ -14,6 +14,9 @@ public class Test{
 
 
         string path = string.Format(Application.dataPath + "/wsds.apk");
+        Debug.LogError("========================================================");
+        Debug.LogError(path);
+        Debug.LogError("========================================================");
         BuildPipeline.BuildPlayer(GetBuildScenes(), path, BuildTarget.Android, BuildOptions.None);
     }
 
