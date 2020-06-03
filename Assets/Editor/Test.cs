@@ -17,7 +17,7 @@ public class Test{
         Debug.LogError("========================================================");
         Debug.LogError(path);
         Debug.LogError("========================================================");
-        BuildPipeline.BuildPlayer(GetBuildScenes(), path, BuildTarget.Android, BuildOptions.None);
+        Debug.Log(BuildPipeline.BuildPlayer(GetBuildScenes(), path, BuildTarget.Android, BuildOptions.None));
     }
 
            static string[] GetBuildScenes()
