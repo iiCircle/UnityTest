@@ -13,7 +13,7 @@ public class Test{
 
 
 
-        string path = Application.dataPath +"/aaaa.apk";
+        string path = "/data/aaaa.apk";
         Debug.LogError("========================================================");
         Debug.LogError(path);
         Debug.LogError("========================================================");
