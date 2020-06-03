@@ -7,16 +7,16 @@ public class Test{
 
     public static void BuildTest()
     {
-        Debug.LogError("========================================================");
-        Debug.LogError("BuildTest");
-        Debug.LogError("========================================================");
+        Debug.Log("========================================================");
+        Debug.Log("BuildTest");
+        Debug.Log("========================================================");
 
 
 
         string path = "/data/aaaa.apk";
-        Debug.LogError("========================================================");
-        Debug.LogError(path);
-        Debug.LogError("========================================================");
+        Debug.Log("========================================================");
+        Debug.Log(path);
+        Debug.Log("========================================================");
         Debug.Log(BuildPipeline.BuildPlayer(GetBuildScenes(), path, BuildTarget.Android, BuildOptions.None));
     }
 
