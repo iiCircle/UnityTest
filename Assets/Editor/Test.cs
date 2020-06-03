@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Test{
 
+    [MenuItem("Tool/Build")]
     public static void BuildTest()
     {
         Debug.Log("========================================================");
@@ -13,7 +14,7 @@ public class Test{
 
 
 
-        string path = "/data/aaaa.apk";
+        string path = Application.dataPath + "/../qqq.apk";
         Debug.Log("========================================================");
         Debug.Log(path);
         Debug.Log("========================================================");
