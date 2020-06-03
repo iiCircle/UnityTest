@@ -9,5 +9,23 @@ public class Test{
         Debug.LogError("========================================================");
         Debug.LogError("BuildTest");
         Debug.LogError("========================================================");
+
+
+
+        string path = string.Format(Application.dataPath + "/../../packageAPK/Channel/null/wsds.apk");
+        BuildPipeline.BuildPlayer(GetBuildScenes(), path, BuildTarget.Android, BuildOptions.None);
     }
+
+           static string[] GetBuildScenes()
+        {
+                List<string> names = new List<string>();
+                foreach(EditorBuildSettingsScene e in EditorBuildSettings.scenes)
+                {
+                        if(e==null)
+                                continue;
+                        if(e.enabled)
+                                names.Add(e.path);
+                }
+                return names.ToArray();
+        }
 }
