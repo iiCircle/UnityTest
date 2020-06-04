@@ -14,6 +14,7 @@ public class Test{
 
 
 
+        //string path = Application.dataPath + "/../qqq.apk";
         string path = "/data/qqq.apk";
         Debug.Log("========================================================");
         Debug.Log(path);
